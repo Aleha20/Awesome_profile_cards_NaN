@@ -1,4 +1,57 @@
+.forms__list {
+  font-size: 18px;
+  font-family: $font-main;
+  color: $color-text;
+}
 .forms__list--item {
+  width: 100%;
   display: flex;
   flex-direction: column;
+}
+// .far fa-object-ungroup {
+//   color: #e17334;
+// }
+
+.design {
+  font-family: $font-main;
+  display: flex;
+  flex-direction: row;
+}
+// .far fa-angle-down {
+//   color: red;
+//   background-color: salmon;
+// }
+
+.colours {
+  display: flex;
+  flex-direction: row;
+}
+.colours__title {
+  width: 50%;
+  font-size: 14px;
+}
+
+.colours__options {
+  width: 50%;
+}
+.forms__list--fill {
+  display: flex;
+  flex-direction: row;
+}
+.forms__list--details {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-main;
+  font-size: 14px;
+  color: $color-second;
+  line-height: 20px;
+}
+.box__full-name {
+  border-color: 1px $color-third;
+  height: 30px;
+  color: #c5c5c5;
+}
+.forms__list--share {
+  display: flex;
+  flex-direction: row;
 }
