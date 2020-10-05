@@ -1,0 +1,9 @@
+.header {
+  background-color: $color-base;
+	padding: 31px 0 30px 40px;
+	&__logo {
+		&--image {
+			width: 201px;
+		}
+	}
+}
