@@ -1,5 +1,7 @@
 # Created by https://www.gitignore.io/api/sass,node,bower,macos
 
+.gitignore
+
 # Bower
 bower_components
 .bower-cache
