@@ -20,18 +20,27 @@
     width: 80%;
 
     @media all and (min-width: 768px) {
-      width: 32%;
+      width: 42%;
     }
 
     &--title {
       font-family: $font-landing;
       color: $color-main;
       font-size: 1.2rem;
+
+      @media all and (min-width: 768px) {
+        font-size: 1.5rem;
+      }
     }
+
     &--text {
       font-family: $font-main;
       color: $color-second;
       font-size: 0.8rem;
+
+      @media all and (min-width: 768px) {
+        font-size: 1rem;
+      }
     }
   }
 
@@ -44,17 +53,30 @@
     padding: 15px 0;
     margin-top: 17.8px;
 
+    @media all and (min-width: 768px) {
+      width: 42%;
+      border-width: 0.13rem;
+    }
+
     &--item {
       display: flex;
       flex-direction: column;
       i {
         color: $color-main;
         font-size: 1.4rem;
+
+        @media all and (min-width: 768px) {
+          font-size: 1.75rem;
+        }
       }
       span {
         font-family: $font-main;
         font-size: 0.8rem;
         color: $color-text;
+
+        @media all and (min-width: 768px) {
+          font-size: 1rem;
+        }
       }
     }
   }
