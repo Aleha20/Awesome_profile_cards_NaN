@@ -1,10 +1,17 @@
 .footer {
+	background-color: white;
+	width: 100vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
   text-align: center;
   padding: 20px 0;
-  border-top: 1px solid #d8d8d8;
+	border-top: 1px solid #d8d8d8;
+	
+/* 	position: absolute;
+  bottom: 0;
+ */
+
   @media all and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
