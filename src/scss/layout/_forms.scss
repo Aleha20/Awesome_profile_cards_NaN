@@ -2,29 +2,42 @@
   font-size: 18px;
   font-family: $font-main;
   color: $color-text;
+  padding: 27px 20px 30px 20px;
 }
 .forms__list--item {
   width: 100%;
   display: flex;
   flex-direction: column;
+  h2 {
+    font-family: $font-main;
+    font-size: 18px;
+    color: $color-text;
+  }
 }
-// .far fa-object-ungroup {
-//   color: #e17334;
-// }
+.arrow {
+  font-size: 18px;
+  color: $color-text;
+}
+.forms__list--icon {
+  color: $color-main;
+  font-size: 18px;
+  margin-right: 10px;
+}
 
-.design {
+.forms__list--header {
   font-family: $font-main;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  text-transform: uppercase;
 }
-// .far fa-angle-down {
-//   color: red;
-//   background-color: salmon;
-// }
-
+.forms__list--title {
+  display: flex;
+  align-items: center;
+}
 .colours {
   display: flex;
-  flex-direction: row;
+  margin-left: 19px;
+  text-transform: uppercase;
 }
 .colours__title {
   width: 50%;
@@ -54,4 +67,42 @@
 .forms__list--share {
   display: flex;
   flex-direction: row;
+}
+.forms__button {
+  width: 199px;
+  height: 50px;
+  background-color: $color-main;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.forms__button--icon {
+  color: $color-base;
+  font-size: 22px;
+  margin-right: 9px;
+}
+.forms__button--text {
+  font-family: $font-main;
+  color: $color-base;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+}
+
+.hidden__link--share {
+  width: 181px;
+  padding: 6px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #00a0f5;
+  font-size: 14px;
+  color: $color-base;
+  text-decoration: none;
+  border-radius: 3px;
+}
+.forms__link--twitter {
+  font-size: 18px;
+  margin-right: 9.5px;
 }
