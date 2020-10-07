@@ -1,12 +1,22 @@
 <li class="forms__list--item">
-  <div class="forms__list--fill">
-    <i class="far fa-keyboard forms__list--icon"></i>
-    <h2>Rellena</h2>
-    <span>^</span>
+  <div class="forms__list--header">
+    <div class="forms__list--title">
+      <i
+        class="far fa-object-ungroup forms__list--icon"
+      ></i>
+      <h2>Rellena</h2>
+    </div>
+    <i class="fas fa-angle-down arrow"></i>
   </div>
   <div>
-    <form class="forms__list--details" action="#" method="POST">
-      <label for="full-name">Nombre completo</label>
+    <form
+      class="forms__list--details"
+      action="#"
+      method="POST"
+    >
+      <label for="full-name"
+        >Nombre completo</label
+      >
       <input
         class="box__full-name"
         id="full-name"
@@ -26,7 +36,9 @@
       <!-- // modificar el nombre del botón "añadir imagen" -->
 
       <label for="photo">Imagen de perfil</label>
-      <input type="file" id="photo" value="photo" name="photo" />
+      <include
+        src="./image-components.html"
+      ></include>
 
       <label for="email">Email</label>
       <input
