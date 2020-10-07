@@ -62,7 +62,9 @@
 .box__full-name {
   border: 1px solid $color-third;
   height: 30px;
-  color: #c5c5c5;
+  &::placeholder {
+    color: #c5c5c5;
+  }
 }
 .forms__list--share {
   display: flex;
