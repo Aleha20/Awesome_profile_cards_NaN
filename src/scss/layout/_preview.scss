@@ -1,12 +1,16 @@
 .preview {
 	width: 100vw;
-	height: 457px;
 	background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+
+	&__container {
+		width: 240px;
+		margin: 0 auto;
+		padding: 38px 0 40px 0;
+	}
+
 	&__reset {
 		width: 75px;
 		height: 30px;
-		margin-top: 38px;
-		margin-left: 45px;
 		border-radius: 15px;
 		border: solid 1px #ffffff;
 		background: none;
@@ -17,11 +21,7 @@
 		text-transform: uppercase;
 	}
 	&__card {
-		width: 240px;
-/* 		margin-left: 45px; */
-/* 		margin-right: 35px; */
 		margin-top: 38px;
-		margin-bottom: 21px;
 
 		&--text {
 			padding-top: 21px;
