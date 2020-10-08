@@ -1,90 +1,85 @@
 .preview {
-  width: 100vw;
-  height: 457px;
-  background-image: linear-gradient(
-    to bottom,
-    #bfcdd0,
-    #dde9ed
-  );
-  &__reset {
-    width: 75px;
-    height: 30px;
-    margin-top: 38px;
-    margin-left: 45px;
-    border-radius: 15px;
-    border: solid 1px #ffffff;
-    background: none;
-    font-family: $font-main;
-    font-size: 12px;
-    line-height: 1.67;
-    color: $color-text;
-    text-transform: uppercase;
-  }
-  &__card {
-    width: 240px;
-    margin-left: 45px;
-    margin-right: 35px;
-    margin-top: 38px;
-    margin-bottom: 21px;
+	width: 100vw;
+	height: 457px;
+	background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+	&__reset {
+		width: 75px;
+		height: 30px;
+		margin-top: 38px;
+		margin-left: 45px;
+		border-radius: 15px;
+		border: solid 1px #ffffff;
+		background: none;
+		font-family: $font-main;
+		font-size: 12px;
+		line-height: 1.67;
+		color: $color-text;
+		text-transform: uppercase;
+	}
+	&__card {
+		width: 240px;
+/* 		margin-left: 45px; */
+/* 		margin-right: 35px; */
+		margin-top: 38px;
+		margin-bottom: 21px;
 
-    &--text {
-      padding-top: 21px;
-      background: #ffffff;
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      flex-wrap: wrap;
-    }
-    &--green {
-      width: 5px;
-      height: 42px;
-      background: $color-cuaternary;
-      margin-top: 5px;
-    }
-    &--name {
-      margin: 0px 0 4px 17px;
-      color: $color-second;
-      font-family: $font-preview;
-      text-transform: capitalize;
-      font-size: 18px;
-      line-height: 1.11;
-      font-weight: 800;
-    }
-    &--job {
-      margin-top: -20px;
-      margin-left: 22px;
-      color: $color-text;
-      padding-bottom: 10px;
-      font-family: $font-preview;
-      font-size: 16px;
-      line-height: 1.25;
-    }
-  }
-  &__img-container {
-    height: 200px;
-    background: springgreen;
-  }
-  &__menu {
-    background: #ffffff;
-    &--contact {
-      height: 54px;
-      list-style: none;
-      display: flex;
-      justify-content: space-evenly;
-      text-align: center;
-      margin-right: 32px;
-      padding-top: 10px;
-    }
-    &--link {
-      color: $color-second;
-      width: 32px;
-      height: 32px;
-      border: 2px solid $color-third;
-      border-radius: 50px;
-      padding-top: 5px;
-    }
-  }
+		&--text {
+			padding-top: 21px;
+			background: #ffffff;
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+			flex-wrap: wrap;
+		}
+		&--green {
+			width: 5px;
+			height: 42px;
+			background: $color-cuaternary;
+			margin-top: 5px;
+		}
+		&--name {
+			margin: 0px 0 4px 17px;
+			color: $color-second;
+			font-family: $font-preview;
+			text-transform: capitalize;
+			font-size: 18px;
+			line-height: 1.11;
+			font-weight: 800;
+		}
+		&--job {
+			margin-top: -20px;
+			margin-left: 22px;
+			color: $color-text;
+			padding-bottom: 10px;
+			font-family: $font-preview;
+			font-size: 16px;
+			line-height: 1.25;
+		}
+	}
+	&__img-container {
+		height: 200px;
+	}
+	&__menu {
+		background: #ffffff;
+		&--contact {
+			height: 54px;
+			list-style: none;
+			display: flex;
+			justify-content: space-evenly;
+			text-align: center;
+			margin-right: 32px;
+			padding-top: 10px;
+		}
+		&--link {
+			color: $color-second;
+			width: 32px;
+			height: 32px;
+			border: 2px solid $color-third;
+			border-radius: 50px;
+			padding-top: 5px;
+		}
+	}
 }
 .fa-trash-alt {
-  padding-right: 8px;
+	padding-right: 8px;
 }

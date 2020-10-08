@@ -36,11 +36,17 @@
   display: flex;
   align-items: center;
 }
+
+.forms__list--content {
+  margin-bottom: 30px;
+  margin-top: 20px;
+
+} 
+
 .colours {
   display: flex;
   margin-left: 19px;
   text-transform: uppercase;
-  padding-bottom: 30px;
 }
 .colours__title {
   width: 50%;
@@ -66,23 +72,31 @@
   border: 1px solid $color-third;
   height: 30px;
   margin: 7px 0 20px 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
   &::placeholder {
     color: #c5c5c5;
     padding-left: 9px;
   }
 }
-.forms__list--share {
-  display: flex;
-  flex-direction: row;
-}
+
+
+/* COMIENZO SECCIÓN COMPARTE */
+
+/* .forms__list--share {
+} */
+
 .forms__button {
   width: 199px;
   height: 50px;
   background-color: $color-main;
   border-radius: 12px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
 }
 .forms__button--icon {
   color: $color-base;
@@ -98,6 +112,15 @@
   text-transform: uppercase;
 }
 
+/* COMIENZO SECCIÓN HIDDEN */
+
+/* .inactive {
+  background-color: #d5d5d5;
+}
+.hidden {
+  display: none;
+} */
+
 .hidden__link--share {
   width: 181px;
   padding: 6px 0;
@@ -110,6 +133,7 @@
   border-radius: 3px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
 }
+
 .forms__link--twitter {
   font-size: 18px;
   margin-right: 9.5px;
