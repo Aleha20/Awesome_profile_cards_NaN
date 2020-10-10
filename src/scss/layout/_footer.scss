@@ -15,6 +15,7 @@
   @media all and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 40px;
   }
   &__text {
