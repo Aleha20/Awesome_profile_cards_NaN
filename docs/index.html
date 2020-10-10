@@ -34,49 +34,47 @@
       </header>
     <main class="main">
       <section class="preview">
-        <button class="preview__reset">
-          <i class="far fa-trash-alt"></i>Reset
-        </button>
-        <div class="preview__card">
-          <div class="preview__card--text">
-            <div class="preview__card--green"></div>
-            <h1 class="preview__card--name">
-              Nombre apellido
-            </h1>
-            <h2 class="preview__card--job">
-              Front-end developer
-            </h2>
-          </div>
-          <!-- <div class="preview__img-container">
+      	<div class="preview__container">
+      		<button class="preview__reset">
+      			<i class="far fa-trash-alt"></i>Reset
+      		</button>
+      		<div class="preview__card">
+      			<div class="preview__card--text">
+      				<div class="preview__card--green"></div>
+      				<h1 class="preview__card--name">Nombre apellido</h1>
+      				<h2 class="preview__card--job">Front-end developer</h2>
+      			</div>
+      			<!-- <div class="preview__img-container">
             <img
               class="preview__img-container--photo"
               src=""
               alt="image"
             />
           </div> -->
-          <div
-            class="preview__img-container profile__image js__profile-image"
-            style="
-              background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
-            "
-          ></div>
-          <nav class="preview__menu">
-            <ul class="preview__menu--contact">
-              <li class="preview__menu--link">
-                <i class="fas fa-mobile-alt"></i>
-              </li>
-              <li class="preview__menu--link">
-                <i class="far fa-envelope"></i>
-              </li>
-              <li class="preview__menu--link">
-                <i class="fab fa-linkedin-in"></i>
-              </li>
-              <li class="preview__menu--link">
-                <i class="fab fa-github-alt"></i>
-              </li>
-            </ul>
-          </nav>
-        </div>
+      			<div
+      				class="preview__img-container profile__image js__profile-image"
+      				style="
+      					background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
+      				"
+      			></div>
+      			<nav class="preview__menu">
+      				<ul class="preview__menu--contact">
+      					<li class="preview__menu--link">
+      						<i class="fas fa-mobile-alt"></i>
+      					</li>
+      					<li class="preview__menu--link">
+      						<i class="far fa-envelope"></i>
+      					</li>
+      					<li class="preview__menu--link">
+      						<i class="fab fa-linkedin-in"></i>
+      					</li>
+      					<li class="preview__menu--link">
+      						<i class="fab fa-github-alt"></i>
+      					</li>
+      				</ul>
+      			</nav>
+      		</div>
+      	</div>
       </section>
 
       <section class="forms">
@@ -89,7 +87,7 @@
               </div>
               <i class="fas fa-angle-down arrow"></i>
             </div>
-            <div class="colours">
+            <div class="forms__list--content colours">
               <h3 class="colours__title">Colores</h3>
               <form class="colours__options">
                 <label for="option1" class="option1">
@@ -139,9 +137,8 @@
               </div>
               <i class="fas fa-angle-down arrow"></i>
             </div>
-            <div>
               <form
-                class="forms__list--details"
+                class="forms__list--content forms__list--details"
                 action="#"
                 method="POST"
               >
@@ -227,42 +224,32 @@
                   name="github"
                 />
               </form>
-            </div>
           </li>
 
           <li class="forms__list--item">
-            <div class="forms__list--header">
-              <div class="forms__list--title">
-                <i
-                  class="far fa-object-ungroup forms__list--icon"
-                ></i>
-                <h2>Comparte</h2>
-              </div>
-              <i class="fas fa-angle-down arrow"></i>
-            </div>
-            <form class="forms__button" action="">
-              <i
-                class="far fa-id-card forms__button--icon"
-              ></i>
-              <input
-                class="forms__button--text"
-                type="submit"
-                value="Crear Tarjeta"
-              />
-            </form>
-            <div class="hidden">
-              <h3 class="hidden__title">
-                La tarjeta ha sido creada:
-              </h3>
-              <a class="hidden__link" href="#"></a>
-              <a class="hidden__link--share" href="#"
-                ><i
-                  class="fab fa-twitter forms__link--twitter"
-                ></i
-                >Compartir en twitter</a
-              >
-            </div>
+          	<div class="forms__list--header">
+          		<div class="forms__list--title">
+          			<i class="far fa-object-ungroup forms__list--icon"></i>
+          			<h2>Comparte</h2>
+          		</div>
+          		<i class="fas fa-angle-down arrow"></i>
+          	</div>
+          	<form class="forms__list--content forms__button inactive" action="">
+          		<i class="far fa-id-card forms__button--icon"></i>
+          		<input class="forms__button--text" type="submit" value="Crear Tarjeta" />
+          	</form>
           </li>
+
+          <div class="hidden">
+          	<div class="hidden__container">
+          		<h3 class="hidden__title">La tarjeta ha sido creada:</h3>
+          		<a class="hidden__link" href="#">www.google.es</a>
+          		<a class="hidden__link--share" href="#"
+          			><i class="fab fa-twitter hidden__link--twitter"></i>Compartir en
+          			twitter</a
+          		>
+          	</div>
+          </div>
 
         </ul>
       </section>
@@ -283,6 +270,5 @@
 
 
     <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/image-components.js"></script>
   </body>
 </html>
