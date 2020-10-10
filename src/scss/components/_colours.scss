@@ -1,71 +1,64 @@
-.option1 {
-  display: flex;
-  justify-content: center;
+.option-flex {
+	display: flex;
+	justify-content: center;
   align-items: center;
-  &__colour1 {
-    margin: 5px 0 5px 10px;
-    width: 30px;
-    height: 25px;
-    background: $color-cold-one;
-  }
-  &__colour2 {
-    margin: 5px 0 5px 0px;
-    width: 30px;
-    height: 25px;
-    background: $color-cold-two;
-  }
-  &__colour3 {
-    margin: 5px 0 5px 0px;
-    width: 30px;
-    height: 25px;
-    background: $color-cold-three;
-  }
+}
+
+.option1 {
+	&__colour1 {
+		margin-left: 10px;
+		width: 30px;
+		height: 25px;
+		background: $color-cold-one;
+	}
+	&__colour2 {
+		width: 30px;
+		height: 25px;
+		background: $color-cold-two;
+	}
+	&__colour3 {
+		width: 30px;
+		height: 25px;
+		background: $color-cold-three;
+	}
 }
 
 .option2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  &__colour1 {
-    margin: 5px 0 5px 10px;
-    width: 30px;
-    height: 25px;
-    background: $color-warm-one;
-  }
-  &__colour2 {
-    margin: 5px 0 5px 0px;
-    width: 30px;
-    height: 25px;
-    background: $color-warm-two;
-  }
-  &__colour3 {
-    margin: 5px 0 5px 0px;
-    width: 30px;
-    height: 25px;
-    background: $color-warm-three;
-  }
+  margin-top: 10px;
+  margin-bottom: 10px;
+	&__colour1 {
+		margin-left: 10px;
+		width: 30px;
+		height: 25px;
+		background: $color-warm-one;
+	}
+	&__colour2 {
+		width: 30px;
+		height: 25px;
+		background: $color-warm-two;
+	}
+	&__colour3 {
+		width: 30px;
+		height: 25px;
+		background: $color-warm-three;
+	}
 }
 
 .option3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  &__colour1 {
-    margin: 5px 0 5px 10px;
-    width: 30px;
-    height: 25px;
-    background: $color-mild-one;
-  }
-  &__colour2 {
-    margin: 5px 0 5px 0px;
-    width: 30px;
-    height: 25px;
-    background: $color-mild-two;
-  }
-  &__colour3 {
-    margin: 5px 0 5px 0px;
-    width: 30px;
-    height: 25px;
-    background: $color-mild-three;
-  }
+	&__colour1 {
+		margin-left: 10px;
+		width: 30px;
+		height: 25px;
+		background: $color-mild-one;
+	}
+	&__colour2 {
+		width: 30px;
+		height: 25px;
+		background: $color-mild-two;
+	}
+	&__colour3 {
+		width: 30px;
+		height: 25px;
+		background: $color-mild-three;
+	}
 }

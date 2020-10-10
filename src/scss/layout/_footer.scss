@@ -1,6 +1,5 @@
 .footer {
-  background-color: white;
-  width: 100vw;
+  background-color: $color-base;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,13 +7,10 @@
   padding: 20px 0;
   border-top: 1px solid #d8d8d8;
 
-  /* 	position: absolute;
-  bottom: 0;
- */
-
   @media all and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 40px;
   }
   &__text {
@@ -24,6 +20,9 @@
     font-size: 14px;
     line-height: 20px;
     padding-bottom: 12px;
+    @media all and (min-width: 768px) {
+      padding-bottom: 0px;
+    }
   }
   &__logo {
     width: 103px;

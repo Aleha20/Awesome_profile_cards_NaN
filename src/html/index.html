@@ -2,35 +2,57 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Adalab Web Starter Kit</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
+    <!-- icons -->
     <script
       src="https://kit.fontawesome.com/1f28b64665.js"
       crossorigin="anonymous"
     ></script>
-
+    <!-- fonts -->
     <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Open+Sans&display=swap"
       rel="stylesheet"
-      href="./assets/css/main.css"
     />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
 
   <body>
-    <include
-      src="./partials/header.html"
-    ></include>
-    <include src="./partials/main.html"></include>
-    <include
-      src="./partials/footer.html"
-    ></include>
+    <main class="landing">
+      <h1 class="landing__title">
+        <img
+          src="./assets/images/logo-awesome-profile-cards.svg"
+          alt="Awesome profile cards"
+          title="Awesome profile cards"
+          class="landing__title--img"
+        />
+      </h1>
+      <div class="landing__claim">
+        <h2 class="landing__claim--title">Crea tu tarjeta de visita</h2>
+        <span class="landing__claim--text"
+          >Crea mejores contactos profesionales de forma fácil y cómoda</span
+        >
+      </div>
+      <ul class="landing__options">
+        <li class="landing__options--item">
+          <i class="far fa-object-ungroup" aria-hidden="true"></i
+          ><span>Diseña</span>
+        </li>
+        <li class="landing__options--item">
+          <i class="far fa-keyboard" aria-hidden="true"></i><span>Rellena</span>
+        </li>
+        <li class="landing__options--item">
+          <i class="fas fa-share-alt" aria-hidden="true"></i
+          ><span>Comparte</span>
+        </li>
+      </ul>
+      <a href="./home.html" class="landing__link">Comenzar</a>
 
+      <include src="./partials/footer.html"></include>
+
+    </main>
+    
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
