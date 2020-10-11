@@ -1,6 +1,6 @@
 .preview {
   width: 100vw;
-  background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+  background-image: linear-gradient(to bottom, #bfcdd0, $color-bg-preview);
 
   @media all and (min-width: 768px) {
     width: calc(100% - 439px);
@@ -19,7 +19,7 @@
     width: 75px;
     height: 30px;
     border-radius: 15px;
-    border: solid 1px #ffffff;
+    border: solid 1px $color-base;
     background: none;
     font-family: $font-main;
     font-size: 12px;
@@ -32,13 +32,13 @@
 
     &--text {
       padding-top: 21px;
-      background: #ffffff;
+      background: $color-base;
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
       flex-wrap: wrap;
     }
-    &--green {
+    &--stick {
       width: 5px;
       height: 42px;
       background: $color-cuaternary;
@@ -67,7 +67,7 @@
     height: 200px;
   }
   &__menu {
-    background: #ffffff;
+    background: $color-base;
     &--contact {
       height: 54px;
       list-style: none;
