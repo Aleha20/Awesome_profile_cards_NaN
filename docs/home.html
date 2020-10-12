@@ -1,274 +1,270 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
-    <title>Awesome profile cards</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/1f28b64665.js"
-      crossorigin="anonymous"
-    ></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>NaN · Not a Name</title>
+		<!-- CSS -->
+		<link rel="stylesheet" href="./assets/css/main.css" />
+		<!-- fonts -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- icons -->
+		<script
+			src="https://kit.fontawesome.com/1f28b64665.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
 
-    <link
-      rel="stylesheet"
-      href="./assets/css/main.css"
-    />
-  </head>
+	<body>
+		<header class="header">
+		    <a class="header__logo" href="./index.html">
+		      <img
+		        class="header__logo--image"
+		        src="./assets/images/logo-awesome-profile-cards.svg"
+		        alt="Logo awesome profile cards"
+		      />
+		    </a>
+		  </header>
+		<main class="main">
+		  <section class="preview">
+  			<div class="preview__container">
+  				<button class="preview__reset">
+  					<i class="far fa-trash-alt"></i>Reset
+  				</button>
+  				<div class="preview__card">
+  					<div class="preview__card--text">
+  						<div class="preview__card--stick"></div>
+  						<h1 class="preview__card--name">Nombre apellido</h1>
+  						<h2 class="preview__card--job">Front-end developer</h2>
+  					</div>
+  					<!-- <div class="preview__img-container">
+  		      <img
+  		        class="preview__img-container--photo"
+  		        src=""
+  		        alt="image"
+  		      />
+  		    </div> -->
+  					<div
+  						class="preview__img-container profile__image js__profile-image"
+  						style="
+  							background-image: url(http://www.marinacendon.com/wp-content/uploads/2020/10/NAN.jpg);
+  						"
+  					></div>
+  					<nav class="preview__menu">
+  						<ul class="preview__menu--contact">
+  							<li class="preview__menu--link">
+  								<i class="fas fa-mobile-alt"></i>
+  							</li>
+  							<li class="preview__menu--link">
+  								<i class="far fa-envelope"></i>
+  							</li>
+  							<li class="preview__menu--link">
+  								<i class="fab fa-linkedin-in"></i>
+  							</li>
+  							<li class="preview__menu--link">
+  								<i class="fab fa-github-alt"></i>
+  							</li>
+  						</ul>
+  					</nav>
+  				</div>
+  			</div>
+  		</section>
 
-  <body>
-    <header class="header">
-        <a class="header__logo" href="./index.html">
-          <img
-            class="header__logo--image"
-            src="./assets/images/logo-awesome-profile-cards.svg"
-            alt="Logo awesome profile cards"
-          />
-        </a>
-      </header>
-    <main class="main">
-      <section class="preview">
-      	<div class="preview__container">
-      		<button class="preview__reset">
-      			<i class="far fa-trash-alt"></i>Reset
-      		</button>
-      		<div class="preview__card">
-      			<div class="preview__card--text">
-      				<div class="preview__card--stick"></div>
-      				<h1 class="preview__card--name">Nombre apellido</h1>
-      				<h2 class="preview__card--job">Front-end developer</h2>
-      			</div>
-      			<!-- <div class="preview__img-container">
-            <img
-              class="preview__img-container--photo"
-              src=""
-              alt="image"
-            />
-          </div> -->
-      			<div
-      				class="preview__img-container profile__image js__profile-image"
-      				style="
-      					background-image: url(http://www.marinacendon.com/wp-content/uploads/2020/10/NAN.jpg);
-      				"
-      			></div>
-      			<nav class="preview__menu">
-      				<ul class="preview__menu--contact">
-      					<li class="preview__menu--link">
-      						<i class="fas fa-mobile-alt"></i>
-      					</li>
-      					<li class="preview__menu--link">
-      						<i class="far fa-envelope"></i>
-      					</li>
-      					<li class="preview__menu--link">
-      						<i class="fab fa-linkedin-in"></i>
-      					</li>
-      					<li class="preview__menu--link">
-      						<i class="fab fa-github-alt"></i>
-      					</li>
-      				</ul>
-      			</nav>
-      		</div>
-      	</div>
-      </section>
+		  <section class="forms">
+  		  <ul class="forms__list">
+  		    <li class="item">
+    		    <div class="js-header1 item__header">
+    		      <div class="item__header--title">
+    		        <i class="far fa-object-ungroup item__header--icon"></i>
+    		        <h2>Diseña</h2>
+    		      </div>
+    		      <i class="fas fa-angle-down js-arrow item__header--arrow"></i>
+    		    </div>
+    		    <div class="js-content1 collapsed  item__content colours">
+    		      <h3 class="colours__title">Colores</h3>
+    		      <form class="colours__options">
+    		        <label for="option1" class="option-flex option1">
+    		          <input
+    		            id="option1"
+    		            type="radio"
+    		            value="option1"
+    		            name="colours"
+    		          />
+    		          <div class="option1__colour1"></div>
+    		          <div class="option1__colour2"></div>
+    		          <div class="option1__colour3"></div>
+    		        </label>
+    		        <label for="option2" class="option-flex option2">
+    		          <input
+    		            id="option2"
+    		            type="radio"
+    		            value="option2"
+    		            name="colours"
+    		          />
+    		          <div class="option2__colour1"></div>
+    		          <div class="option2__colour2"></div>
+    		          <div class="option2__colour3"></div>
+    		        </label>
+    		        <label for="option3" class="option-flex option3">
+    		          <input
+    		            id="option3"
+    		            type="radio"
+    		            value="option3"
+    		            name="colours"
+    		          />
+    		          <div class="option3__colour1"></div>
+    		          <div class="option3__colour2"></div>
+    		          <div class="option3__colour3"></div>
+    		        </label>
+    		      </form>
+    		    </div>
+    		  </li>
 
-      <section class="forms">
-        <ul class="forms__list">
-          <li class="item">
-            <div class="js-header1 item__header">
-              <div class="item__header--title">
-                <i class="far fa-object-ungroup item__header--icon"></i>
-                <h2>Diseña</h2>
-              </div>
-              <i class="fas fa-angle-down js-arrow item__header--arrow"></i>
-            </div>
-            <div class="js-content1 collapsed  item__content colours">
-              <h3 class="colours__title">Colores</h3>
-              <form class="colours__options">
-                <label for="option1" class="option-flex option1">
-                  <input
-                    id="option1"
-                    type="radio"
-                    value="option1"
-                    name="colours"
-                  />
-                  <div class="option1__colour1"></div>
-                  <div class="option1__colour2"></div>
-                  <div class="option1__colour3"></div>
-                </label>
-                <label for="option2" class="option-flex option2">
-                  <input
-                    id="option2"
-                    type="radio"
-                    value="option2"
-                    name="colours"
-                  />
-                  <div class="option2__colour1"></div>
-                  <div class="option2__colour2"></div>
-                  <div class="option2__colour3"></div>
-                </label>
-                <label for="option3" class="option-flex option3">
-                  <input
-                    id="option3"
-                    type="radio"
-                    value="option3"
-                    name="colours"
-                  />
-                  <div class="option3__colour1"></div>
-                  <div class="option3__colour2"></div>
-                  <div class="option3__colour3"></div>
-                </label>
-              </form>
-            </div>
-          </li>
+  		    <li class="item">
+    		    <div class="js-header2 item__header">
+    		      <div class="item__header--title">
+    		        <i
+    		          class="far fa-keyboard item__header--icon"
+    		        ></i>
+    		        <h2>Rellena</h2>
+    		      </div>
+    		      <i class="fas fa-angle-down js-arrow item__header--arrow"></i>
+    		    </div>
+    		      <form
+    		        class="js-content2 collapsed item__content fill"
+    		        action="#"
+    		        method="POST"
+    		      >
+    		        <label for="full-name"
+    		          >Nombre completo</label
+    		        >
+    		        <input
+    		          class="fill__box"
+    		          id="full-name"
+    		          type="text"
+    		          placeholder="Ej: Sally Jill"
+    		          name="full-name"
+    		        />
+    		        <label for="job">Puesto</label>
+    		        <input
+    		          class="fill__box"
+    		          id="job"
+    		          type="text"
+    		          placeholder="Ej: Front-end unicorn"
+    		          name="job"
+    		        />
 
-          <li class="item">
-            <div class="js-header2 item__header">
-              <div class="item__header--title">
-                <i
-                  class="far fa-keyboard item__header--icon"
-                ></i>
-                <h2>Rellena</h2>
-              </div>
-              <i class="fas fa-angle-down js-arrow item__header--arrow"></i>
-            </div>
-              <form
-                class="js-content2 collapsed item__content fill"
-                action="#"
-                method="POST"
-              >
-                <label for="full-name"
-                  >Nombre completo</label
-                >
-                <input
-                  class="fill__box"
-                  id="full-name"
-                  type="text"
-                  placeholder="Ej: Sally Jill"
-                  name="full-name"
-                />
-                <label for="job">Puesto</label>
-                <input
-                  class="fill__box"
-                  id="job"
-                  type="text"
-                  placeholder="Ej: Front-end unicorn"
-                  name="job"
-                />
+    		        <!-- // modificar el nombre del botón "añadir imagen" -->
 
-                <!-- // modificar el nombre del botón "añadir imagen" -->
-
-                <label for="photo">Imagen de perfil</label>
-                <div class="action">
-                  <button
-                    class="action__upload-btn js__profile-trigger"
-                    type="button"
-                  >
-                    Añadir imagen
-                  </button>
-                  <input
-                    type="file"
-                    name=""
-                    id="img-selector"
-                    class="action__hiddenField js__profile-upload-btn"
-                  />
-                  <div class="profile">
-                    <!-- <div
-                      class="profile__image js__profile-image"
-                      style="
-                        background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
-                      "
-                    ></div> -->
-                    <div
-                      class="profile__preview js__profile-preview"
-                    ></div>
-                  </div>
-                </div>
+    		        <label for="photo">Imagen de perfil</label>
+    		        <div class="action">
+        		      <button
+        		        class="action__upload-btn js__profile-trigger"
+        		        type="button"
+        		      >
+        		        Añadir imagen
+        		      </button>
+        		      <input
+        		        type="file"
+        		        name=""
+        		        id="img-selector"
+        		        class="action__hiddenField js__profile-upload-btn"
+        		      />
+        		      <div class="profile">
+        		        <!-- <div
+        		          class="profile__image js__profile-image"
+        		          style="
+        		            background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
+        		          "
+        		        ></div> -->
+        		        <div
+        		          class="profile__preview js__profile-preview"
+        		        ></div>
+        		      </div>
+        		    </div>
 
 
-                <label for="email">Email</label>
-                <input
-                  class="fill__box"
-                  id="email"
-                  type="email"
-                  placeholder="Ej: sally-hill@gmail.com"
-                  name="email"
-                />
-                <label for="phone">Teléfono</label>
-                <input
-                  class="fill__box"
-                  id="phone"
-                  type="tel"
-                  placeholder="Ej: 555-55-55-55"
-                  name="phone"
-                />
-                <label for="linkedin">Linkedin</label>
-                <input
-                  class="fill__box"
-                  id="linkedin"
-                  type="text"
-                  placeholder="Ej: linkedin.com/in/sally-hill"
-                  name="linkedin"
-                />
-                <label for="github">Github</label>
-                <input
-                  class="fill__box"
-                  id="github"
-                  type="text"
-                  placeholder="Ej: @sally-hill"
-                  name="github"
-                />
-              </form>
-          </li>
+    		        <label for="email">Email</label>
+    		        <input
+    		          class="fill__box"
+    		          id="email"
+    		          type="email"
+    		          placeholder="Ej: sally-hill@gmail.com"
+    		          name="email"
+    		        />
+    		        <label for="phone">Teléfono</label>
+    		        <input
+    		          class="fill__box"
+    		          id="phone"
+    		          type="tel"
+    		          placeholder="Ej: 555-55-55-55"
+    		          name="phone"
+    		        />
+    		        <label for="linkedin">Linkedin</label>
+    		        <input
+    		          class="fill__box"
+    		          id="linkedin"
+    		          type="text"
+    		          placeholder="Ej: linkedin.com/in/sally-hill"
+    		          name="linkedin"
+    		        />
+    		        <label for="github">Github</label>
+    		        <input
+    		          class="fill__box"
+    		          id="github"
+    		          type="text"
+    		          placeholder="Ej: @sally-hill"
+    		          name="github"
+    		        />
+    		      </form>
+    		  </li>
 
-          <li class="item">
-          	<div class="js-header3 item__header">
-          		<div class="item__header--title">
-          			<i class="fas fa-share-alt item__header--icon"></i>
-          			<h2>Comparte</h2>
-          		</div>
-          		<i class="fas fa-angle-down js-arrow item__header--arrow"></i>
-          	</div>
-          	<form class="js-content3 collapsed item__content share inactive" action="">
-          		<i class="far fa-id-card share__icon"></i>
-          		<input class="share__text" type="submit" value="Crear Tarjeta" />
-          	</form>
-          </li>
+  		    <li class="item">
+    		  	<div class="js-header3 item__header">
+    		  		<div class="item__header--title">
+    		  			<i class="fas fa-share-alt item__header--icon"></i>
+    		  			<h2>Comparte</h2>
+    		  		</div>
+    		  		<i class="fas fa-angle-down js-arrow item__header--arrow"></i>
+    		  	</div>
+    		  	<form class="js-content3 collapsed item__content share inactive" action="">
+    		  		<i class="far fa-id-card share__icon"></i>
+    		  		<input class="share__text" type="submit" value="Crear Tarjeta" />
+    		  	</form>
+    		  </li>
 
-          <div class="share-url hidden">
-          	<div class="share-url__container">
-          		<h3 class="share-url__title">La tarjeta ha sido creada:</h3>
-          		<a class="share-url__link" href="#">www.google.es</a>
-          		<a class="share-url__link--share" href="#"
-          			><i class="fab fa-twitter share-url__link--twitter"></i>Compartir en
-          			twitter</a
-          		>
-          	</div>
-          </div>
+    		  <div class="share-url hidden">
+    		  	<div class="share-url__container">
+    		  		<h3 class="share-url__title">La tarjeta ha sido creada:</h3>
+    		  		<a class="share-url__link" href="#">www.google.es</a>
+    		  		<a class="share-url__link--share" href="#"
+    		  			><i class="fab fa-twitter share-url__link--twitter"></i>Compartir en
+    		  			twitter</a
+    		  		>
+    		  	</div>
+    		  </div>
 
-        </ul>
-      </section>
+  		  </ul>
+  		</section>
 
-    </main>
+		</main>
 
-    <footer class="footer">
-      <div class="footer__text">Awesome profile-cards &#64;2018</div>
-      <div>
-        <img
-          class="footer__logo"
-          src="./assets/images/logo-adalab.png"
-          alt="Logo Adalab"
-          title="Adalab"
-        />
-      </div>
-    </footer>
+		<footer class="footer">
+		  <div class="footer__text">Awesome profile-cards &#64;2018</div>
+		  <div>
+		    <img
+		      class="footer__logo"
+		      src="./assets/images/logo-adalab.png"
+		      alt="Logo Adalab"
+		      title="Adalab"
+		    />
+		  </div>
+		</footer>
 
 
-    <script src="./assets/js/main.js"></script>
-  </body>
+		<script src="./assets/js/main.js"></script>
+	</body>
 </html>
