@@ -11,10 +11,10 @@ const content2 = document.querySelector('.js-content2');
 const content3 = document.querySelector('.js-content3');
 
 // funcion para el colapsable de diseña
-function collapse1(){
+function collapse1() {
   content1.classList.toggle('collapsed');
   // si diseña NO contiene la clase .collapsed, se le añade a los otros dos apartados
-  if (!content1.classList.contains('collapsed')){
+  if (!content1.classList.contains('collapsed')) {
     content2.classList.add('collapsed');
     content3.classList.add('collapsed');
   }
@@ -23,9 +23,9 @@ function collapse1(){
 header1.addEventListener('click', collapse1);
 
 // repetimos lo mismo, para rellena
-function collapse2(){
+function collapse2() {
   content2.classList.toggle('collapsed');
-  if (!content2.classList.contains('collapsed')){
+  if (!content2.classList.contains('collapsed')) {
     content1.classList.add('collapsed');
     content3.classList.add('collapsed');
   }
@@ -33,9 +33,9 @@ function collapse2(){
 header2.addEventListener('click', collapse2);
 
 // y para comparte
-function collapse3(){
+function collapse3() {
   content3.classList.toggle('collapsed');
-  if (!content3.classList.contains('collapsed')){
+  if (!content3.classList.contains('collapsed')) {
     content1.classList.add('collapsed');
     content2.classList.add('collapsed');
   }
@@ -53,6 +53,17 @@ header3.addEventListener('click', collapse3);
 // END Selector de color
 
 // Text input
+const inputList = document.querySelectorAll('.js-field');
+
+// const inputListValue = inputList.value;
+// console.log(inputListValue);
+for (const eachElement of inputList) {
+  eachElement.addEventListener('blur', getInfo);
+  //console.log(eachElement);
+}
+function getInfo(event) {
+  console.log(event.currentTarget.value);
+}
 
 // END Text input
 
