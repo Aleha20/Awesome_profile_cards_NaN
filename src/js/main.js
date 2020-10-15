@@ -55,14 +55,28 @@ header3.addEventListener('click', collapse3);
 // Text input
 const inputList = document.querySelectorAll('.js-field');
 
-// const inputListValue = inputList.value;
-// console.log(inputListValue);
-for (const eachElement of inputList) {
-  eachElement.addEventListener('blur', getInfo);
-  //console.log(eachElement);
-}
+let data = {
+  fullname: 'Nombre Apellido',
+  job: 'Front-end developer',
+  email: '#',
+  phone: '#',
+  linkedin: '#',
+  github: '#',
+};
+// console.log(data);
+const previewName = document.querySelector('.js-name');
+console.log(previewName);
+
+
 function getInfo(event) {
   console.log(event.currentTarget.value);
+  data[event.currentTarget.id] = event.currentTarget.value;
+  console.log(data);
+  previewName.innerHTML = data[event.currentTarget.id];
+}
+for (const eachElement of inputList) {
+  eachElement.addEventListener('keyup', getInfo);
+
 }
 
 // END Text input

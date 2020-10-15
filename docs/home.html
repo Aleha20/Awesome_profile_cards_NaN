@@ -30,47 +30,47 @@
 		  </header>
 		<main class="main">
 		  <section class="preview">
-  			<div class="preview__container">
-  				<button class="preview__reset">
-  					<i class="far fa-trash-alt"></i>Reset
-  				</button>
-  				<div class="preview__card">
-  					<div class="preview__card--text">
-  						<div class="preview__card--stick"></div>
-  						<h1 class="preview__card--name">Nombre apellido</h1>
-  						<h2 class="preview__card--job">Front-end developer</h2>
-  					</div>
-  					<!-- <div class="preview__img-container">
+  		  <div class="preview__container">
+  		    <button class="preview__reset">
+  		      <i class="far fa-trash-alt"></i>Reset
+  		    </button>
+  		    <div class="preview__card">
+  		      <div class="preview__card--text">
+  		        <div class="preview__card--stick"></div>
+  		        <h1 class="js-name preview__card--name">Nombre apellido</h1>
+  		        <h2 class="preview__card--job">Front-end developer</h2>
+  		      </div>
+  		      <!-- <div class="preview__img-container">
   		      <img
   		        class="preview__img-container--photo"
   		        src=""
   		        alt="image"
   		      />
   		    </div> -->
-  					<div
-  						class="preview__img-container profile__image js__profile-image"
-  						style="
-  							background-image: url(http://www.marinacendon.com/wp-content/uploads/2020/10/NAN.jpg);
-  						"
-  					></div>
-  					<nav class="preview__menu">
-  						<ul class="preview__menu--contact">
-  							<li class="preview__menu--link">
-  								<i class="fas fa-mobile-alt"></i>
-  							</li>
-  							<li class="preview__menu--link">
-  								<i class="far fa-envelope"></i>
-  							</li>
-  							<li class="preview__menu--link">
-  								<i class="fab fa-linkedin-in"></i>
-  							</li>
-  							<li class="preview__menu--link">
-  								<i class="fab fa-github-alt"></i>
-  							</li>
-  						</ul>
-  					</nav>
-  				</div>
-  			</div>
+  		      <div
+  		        class="preview__img-container profile__image js__profile-image"
+  		        style="
+  		          background-image: url(http://www.marinacendon.com/wp-content/uploads/2020/10/NAN.jpg);
+  		        "
+  		      ></div>
+  		      <nav class="preview__menu">
+  		        <ul class="preview__menu--contact">
+  		          <li class="preview__menu--link">
+  		            <i class="fas fa-mobile-alt"></i>
+  		          </li>
+  		          <li class="preview__menu--link">
+  		            <i class="far fa-envelope"></i>
+  		          </li>
+  		          <li class="preview__menu--link">
+  		            <i class="fab fa-linkedin-in"></i>
+  		          </li>
+  		          <li class="preview__menu--link">
+  		            <i class="fab fa-github-alt"></i>
+  		          </li>
+  		        </ul>
+  		      </nav>
+  		    </div>
+  		  </div>
   		</section>
 
 		  <section class="forms">
@@ -126,100 +126,96 @@
   		    <li class="item">
     		    <div class="js-header2 item__header">
     		      <div class="item__header--title">
-    		        <i
-    		          class="far fa-keyboard item__header--icon"
-    		        ></i>
+    		        <i class="far fa-keyboard item__header--icon"></i>
     		        <h2>Rellena</h2>
     		      </div>
     		      <i class="fas fa-angle-down js-arrow item__header--arrow"></i>
     		    </div>
-    		      <form
-    		        class="js-content2 collapsed item__content fill"
-    		        action="#"
-    		        method="POST"
-    		      >
-    		        <label for="full-name"
-    		          >Nombre completo</label
-    		        >
-    		        <input
-    		          class="fill__box"
-    		          id="full-name"
-    		          type="text"
-    		          placeholder="Ej: Sally Jill"
-    		          name="full-name"
-    		        />
-    		        <label for="job">Puesto</label>
-    		        <input
-    		          class="fill__box"
-    		          id="job"
-    		          type="text"
-    		          placeholder="Ej: Front-end unicorn"
-    		          name="job"
-    		        />
+    		    <form
+    		      class="js-content2 collapsed item__content fill"
+    		      action="#"
+    		      method="POST"
+    		    >
+    		      <label for="fullname">Nombre completo</label>
+    		      <input
+    		        class="js-field fill__box"
+    		        id="fullname"
+    		        type="text"
+    		        placeholder="Ej: Sally Jill"
+    		        name="full-name"
+    		      />
+    		      <label for="job">Puesto</label>
+    		      <input
+    		        class="js-field fill__box"
+    		        id="job"
+    		        type="text"
+    		        placeholder="Ej: Front-end unicorn"
+    		        name="job"
+    		      />
 
-    		        <!-- // modificar el nombre del botón "añadir imagen" -->
+    		      <!-- // modificar el nombre del botón "añadir imagen" -->
 
-    		        <label for="photo">Imagen de perfil</label>
-    		        <div class="action">
-        		      <button
-        		        class="action__upload-btn js__profile-trigger"
-        		        type="button"
-        		      >
-        		        Añadir imagen
-        		      </button>
-        		      <input
-        		        type="file"
-        		        name=""
-        		        id="img-selector"
-        		        class="action__hiddenField js__profile-upload-btn"
-        		      />
-        		      <div class="profile">
-        		        <!-- <div
-        		          class="profile__image js__profile-image"
-        		          style="
-        		            background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
-        		          "
-        		        ></div> -->
-        		        <div
-        		          class="profile__preview js__profile-preview"
-        		        ></div>
-        		      </div>
-        		    </div>
+    		      <label for="photo">Imagen de perfil</label>
+    		      <div class="action">
+      		      <button
+      		        class="action__upload-btn js__profile-trigger"
+      		        type="button"
+      		      >
+      		        Añadir imagen
+      		      </button>
+      		      <input
+      		        type="file"
+      		        name=""
+      		        id="img-selector"
+      		        class="action__hiddenField js__profile-upload-btn"
+      		      />
+      		      <div class="profile">
+      		        <!-- <div
+      		          class="profile__image js__profile-image"
+      		          style="
+      		            background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
+      		          "
+      		        ></div> -->
+      		        <div
+      		          class="profile__preview js__profile-preview"
+      		        ></div>
+      		      </div>
+      		    </div>
 
 
-    		        <label for="email">Email</label>
-    		        <input
-    		          class="fill__box"
-    		          id="email"
-    		          type="email"
-    		          placeholder="Ej: sally-hill@gmail.com"
-    		          name="email"
-    		        />
-    		        <label for="phone">Teléfono</label>
-    		        <input
-    		          class="fill__box"
-    		          id="phone"
-    		          type="tel"
-    		          placeholder="Ej: 555-55-55-55"
-    		          name="phone"
-    		        />
-    		        <label for="linkedin">Linkedin</label>
-    		        <input
-    		          class="fill__box"
-    		          id="linkedin"
-    		          type="text"
-    		          placeholder="Ej: linkedin.com/in/sally-hill"
-    		          name="linkedin"
-    		        />
-    		        <label for="github">Github</label>
-    		        <input
-    		          class="fill__box"
-    		          id="github"
-    		          type="text"
-    		          placeholder="Ej: @sally-hill"
-    		          name="github"
-    		        />
-    		      </form>
+    		      <label for="email">Email</label>
+    		      <input
+    		        class="js-field fill__box"
+    		        id="email"
+    		        type="email"
+    		        placeholder="Ej: sally-hill@gmail.com"
+    		        name="email"
+    		      />
+    		      <label for="phone">Teléfono</label>
+    		      <input
+    		        class="js-field fill__box"
+    		        id="phone"
+    		        type="tel"
+    		        placeholder="Ej: 555-55-55-55"
+    		        name="phone"
+    		      />
+    		      <label for="linkedin">Linkedin</label>
+    		      <input
+    		        class="js-field fill__box"
+    		        id="linkedin"
+    		        type="text"
+    		        placeholder="Ej: linkedin.com/in/sally-hill"
+    		        name="linkedin"
+    		      />
+    		      <label for="github">Github</label>
+    		      <input
+    		        class="js-field fill__box"
+    		        id="github"
+    		        type="text"
+    		        placeholder="Ej: @sally-hill"
+    		        name="github"
+    		      />
+    		    </form>
     		  </li>
 
   		    <li class="item">
