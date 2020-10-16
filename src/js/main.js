@@ -64,19 +64,25 @@ let data = {
   github: '#',
 };
 // console.log(data);
-const previewName = document.querySelector('.js-name');
-console.log(previewName);
-
+const previewText = document.querySelectorAll('.js-preview-text');
+console.log(previewText);
 
 function getInfo(event) {
-  console.log(event.currentTarget.value);
   data[event.currentTarget.id] = event.currentTarget.value;
-  console.log(data);
-  previewName.innerHTML = data[event.currentTarget.id];
+
+  if (event.currentTarget.id === 'fullname') {
+    previewText.innerHTML = data[event.currentTarget.id];
+    console.log('estoy entrando');
+  }else if{
+
+  }
 }
+
+
+
+
 for (const eachElement of inputList) {
   eachElement.addEventListener('keyup', getInfo);
-
 }
 
 // END Text input
