@@ -71,12 +71,12 @@ function getInfo(event) {
   data[event.currentTarget.id] = event.currentTarget.value;
 
   if (event.currentTarget.id === 'fullname') {
-    previewText.innerHTML = data[event.currentTarget.id];
+    previewText[0].innerHTML = data[event.currentTarget.id];
     console.log('estoy entrando');
-  }else if{
-
+  }else if(event.currentTarget.id === 'job'){
+    previewText[1].innerHTML = data[event.currentTarget.id];
+   }
   }
-}
 
 
 
