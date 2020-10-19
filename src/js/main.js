@@ -58,8 +58,8 @@ const inputList = document.querySelectorAll(".js-field");
 let data = {
 	fullname: "Nombre Apellido",
 	job: "Front-end developer",
-	email: "#",
-	phone: "#",
+  phone: "#",
+  email: "#",
 	linkedin: "#",
 	github: "#",
 };
@@ -70,6 +70,10 @@ const nameInit = previewText[0].innerHTML;
 console.log("Esto es nameInit " + nameInit);
 const jobInit = previewText[1].innerHTML;
 console.log("Esto es jobInit " + jobInit);
+
+const previewHref = document.querySelectorAll(".js-preview-href");
+console.log(previewHref);
+const hrefInit = "#";
 
 function getInfo(event) {
 	data[event.currentTarget.id] = event.currentTarget.value;
@@ -87,11 +91,37 @@ function getInfo(event) {
 		} else {
 			previewText[1].innerHTML = jobInit;
 		}
-	}
+	} else if (event.currentTarget.id === "phone") {
+    if (event.currentTarget.value !== "") {
+			previewHref[0].href = "tel:" + data.phone;
+		} else {
+			previewHref[0].href = hrefInit;
+		}
+  } else if (event.currentTarget.id === "email") {
+    if (event.currentTarget.value !== "") {
+			previewHref[1].href = "mailto:" + data.email;
+		} else {
+			previewHref[1].href = hrefInit;
+		}
+  } else if (event.currentTarget.id === "linkedin") {
+    if (event.currentTarget.value !== "") {
+			previewHref[2].href = "https://" + data.linkedin;
+		} else {
+			previewHref[2].href = hrefInit;
+		}
+  } else if (event.currentTarget.id === "github") {
+    previewHref[3].href = "https://github.com/" + data.github;
+  } else {
+    previewHref[3].href = hrefInit;
+  }
 }
 
 for (const eachElement of inputList) {
 	eachElement.addEventListener("keyup", getInfo);
+}
+
+for (const eachHref of previewHref) {
+	eachHref.addEventListener("blur", getInfo);
 }
 
 // END Text input
