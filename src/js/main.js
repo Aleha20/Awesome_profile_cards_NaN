@@ -91,7 +91,7 @@ function paint() {
 	previewHref[2].href = 'https://' + data.linkedin || hrefInit;
 	previewHref[3].href = 'https://github.com/' + data.github || hrefInit;
 	profileImage.style.backgroundImage =
-		`url(${data.photo})` || 'url(../assets/images/NAN-card-photo-default.jpg)';
+		`url(${data.photo})` || 'url(../images/NAN-card-photo-default.jpg)';
 }
 
 // 	if (event.currentTarget.id === 'name') {
@@ -149,7 +149,7 @@ function handleReset() {
 	data.email = hrefInit;
 	data.linkedin = hrefInit;
 	data.github = hrefInit;
-	data.photo = '../assets/images/NAN-card-photo-default.jpg';
+	data.photo = '../images/NAN-card-photo-default.jpg';
 	console.log(data);
 	for (const input of inputList) {
 		input.value = '';
