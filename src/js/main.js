@@ -180,6 +180,50 @@ function chargeData() {
 // END Local Storage
 
 // card generator
+// const submitButton = document.querySelector('.js-submit');
+// const responseURL = document.querySelector('.js-response');
+// const form = document.querySelector('.js-form');
+
+// function sendData() {
+//   sendRequest(data);
+// }
+
+// function sendRequest(json) {
+//   fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
+//     method: 'POST',
+//     body: JSON.stringify(json),
+//     headers: {
+//       'content-type': 'application/json',
+//     },
+//   })
+//     .then(function (resp) {
+//       return resp.json();
+//     })
+//     .then(function (result) {
+//       showURL(result);
+//     })
+//     .catch(function (error) {
+//       console.log(error);
+//     });
+// }
+
+// function handleForm(ev) {
+//   ev.preventDefault();
+// }
+
+// const hiddenBox = document.querySelector('.js-share-url');
+
+// function showURL(result) {
+//   if (result.success) {
+//     responseURL.innerHTML = result.cardURL;
+//     responseURL.href = result.cardURL;
+//     hiddenBox.classList.remove('hidden');
+//   } else {
+//     responseURL.innerHTML = 'ERROR:' + result.error;
+//   }
+//   handleForm(ev);
+// }
+// submitButton.addEventListener('click', sendRequest);
 
 // END card generator
 
