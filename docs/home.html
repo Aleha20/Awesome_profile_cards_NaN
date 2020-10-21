@@ -133,14 +133,14 @@
     		      <i class="fas fa-angle-down js-arrow item__header--arrow"></i>
     		    </div>
     		    <form
-    		      class="js-content2 collapsed item__content fill"
+    		      class="js-form js-content2 collapsed item__content fill"
     		      action="#"
     		      method="POST"
     		    >
-    		      <label for="fullname">Nombre completo</label>
+    		      <label for="name">Nombre completo</label>
     		      <input
     		        class="js-field fill__box"
-    		        id="fullname"
+    		        id="name"
     		        type="text"
     		        placeholder="Ej: Sally Jill"
     		        name="full-name"
@@ -192,7 +192,7 @@
     		        placeholder="Ej: 555-55-55-55"
     		        name="phone"
     		      />
-    		          <label for="email">Email</label>
+    		      <label for="email">Email</label>
     		      <input
     		        class="js-field fill__box"
     		        id="email"
@@ -220,28 +220,28 @@
     		  </li>
 
   		    <li class="item">
-    		  	<div class="js-header3 item__header">
-    		  		<div class="item__header--title">
-    		  			<i class="fas fa-share-alt item__header--icon"></i>
-    		  			<h2>Comparte</h2>
-    		  		</div>
-    		  		<i class="fas fa-angle-down js-arrow item__header--arrow"></i>
-    		  	</div>
-    		  	<form class="js-content3 collapsed item__content share inactive" action="">
-    		  		<i class="far fa-id-card share__icon"></i>
-    		  		<input class="share__text" type="submit" value="Crear Tarjeta" />
-    		  	</form>
+    		    <div class="js-header3 item__header">
+    		      <div class="item__header--title">
+    		        <i class="fas fa-share-alt item__header--icon"></i>
+    		        <h2>Comparte</h2>
+    		      </div>
+    		      <i class="fas fa-angle-down js-arrow item__header--arrow"></i>
+    		    </div>
+    		    <form class="js-content3 collapsed item__content share inactive" action="">
+    		      <i class="far fa-id-card share__icon"></i>
+    		      <input class="js-submit share__text" type="button" value="Crear Tarjeta" />
+    		    </form>
     		  </li>
 
-    		  <div class="share-url hidden">
-    		  	<div class="share-url__container">
-    		  		<h3 class="share-url__title">La tarjeta ha sido creada:</h3>
-    		  		<a class="share-url__link" href="#">www.google.es</a>
-    		  		<a class="share-url__link--share" href="#"
-    		  			><i class="fab fa-twitter share-url__link--twitter"></i>Compartir en
-    		  			twitter</a
-    		  		>
-    		  	</div>
+    		  <div class="share-url js-share-url hidden">
+    		    <div class="share-url__container">
+    		      <h3 class="share-url__title">La tarjeta ha sido creada:</h3>
+    		      <a class="js-response share-url__link" href="#"></a>
+    		      <a class="share-url__link--share" href="#"
+    		        ><i class="fab fa-twitter share-url__link--twitter"></i>Compartir en
+    		        twitter</a
+    		      >
+    		    </div>
     		  </div>
 
   		  </ul>

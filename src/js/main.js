@@ -53,13 +53,13 @@ header3.addEventListener("click", collapse3);
 const inputList = document.querySelectorAll(".js-field");
 
 let data = {
-	fullname: "Nombre Apellido",
+	name: "Nombre Apellido",
 	job: "Front-end developer",
 	phone: "#",
 	email: "#",
 	linkedin: "#",
 	github: "#",
-	image: "",
+	photo: "",
 	palette: 1,
 };
 
@@ -83,7 +83,7 @@ function getInfo(event) {
 }
 
 function paint() {
-	previewText[0].innerHTML = data.fullname || nameInit;
+	previewText[0].innerHTML = data.name || nameInit;
 	previewText[1].innerHTML = data.job || jobInit;
 	previewHref[0].href = "tel:" + data.phone || hrefInit;
 	previewHref[1].href = "mailto:" + data.email || hrefInit;
@@ -91,10 +91,10 @@ function paint() {
 	previewHref[3].href = "https://github.com/" + data.github || hrefInit;
 }
 
-// 	if (event.currentTarget.id === 'fullname') {
+// 	if (event.currentTarget.id === 'name') {
 // 		// PREGUNTA #1 (revisar Trello):
 // 		if (event.currentTarget.value !== '') {
-// 			previewText[0].innerHTML = data.fullname;
+// 			previewText[0].innerHTML = data.name;
 // 		} else {
 // 			previewText[0].innerHTML = nameInit;
 // 		}
@@ -141,7 +141,7 @@ const btnReset = document.querySelector(".js-reset");
 
 function handleReset() {
 	console.log("reset");
-	data.fullname = nameInit;
+	data.name = nameInit;
 	data.job = jobInit;
 	data.phone = hrefInit;
 	data.email = hrefInit;
@@ -182,50 +182,57 @@ function chargeData() {
 // END Local Storage
 
 // card generator
-// const submitButton = document.querySelector('.js-submit');
-// const responseURL = document.querySelector('.js-response');
-// const form = document.querySelector('.js-form');
 
-// function sendData() {
-//   sendRequest(data);
-// }
+// constante selectora del boton CREAR TARJETA
+const submitButton = document.querySelector(".js-submit");
+// constante selectora del ELEMENTO html con la URL
+const responseURL = document.querySelector(".js-response");
+// constante selectora del formulario completo
+const form = document.querySelector(".js-form");
 
-// function sendRequest(json) {
-//   fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
-//     method: 'POST',
-//     body: JSON.stringify(json),
-//     headers: {
-//       'content-type': 'application/json',
-//     },
-//   })
-//     .then(function (resp) {
-//       return resp.json();
-//     })
-//     .then(function (result) {
-//       showURL(result);
-//     })
-//     .catch(function (error) {
-//       console.log(error);
-//     });
-// }
+// ¿?
+function sendData() {
+	sendRequest(data);
+}
 
-// function handleForm(ev) {
-//   ev.preventDefault();
-// }
+// Función para envío de datos a la API
+function sendRequest(json) {
+	console.log("entro en funcion antes de fetch");
+	fetch("https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/", {
+		method: "POST",
+		body: JSON.stringify(json),
+		headers: {
+			"content-type": "application/json",
+		},
+	})
+		.then(function (resp) {
+			return resp.json();
+		})
+		.then(function (result) {
+			showURL(result);
+		})
+		.catch(function (error) {
+			console.log(error);
+		});
+}
 
-// const hiddenBox = document.querySelector('.js-share-url');
 
-// function showURL(result) {
-//   if (result.success) {
-//     responseURL.innerHTML = result.cardURL;
-//     responseURL.href = result.cardURL;
-//     hiddenBox.classList.remove('hidden');
-//   } else {
-//     responseURL.innerHTML = 'ERROR:' + result.error;
-//   }
-//   handleForm(ev);
-// }
-// submitButton.addEventListener('click', sendRequest);
+
+const hiddenBox = document.querySelector(".js-share-url");
+
+function showURL(result) {
+	if (result.success) {
+		responseURL.innerHTML = result.cardURL;
+		responseURL.href = result.cardURL;
+		hiddenBox.classList.remove("hidden");
+	} else {
+		responseURL.innerHTML = "ERROR:" + result.error;
+	}
+  // const handleForm = function (ev) {
+  //   ev.preventDefault();
+  // }
+}
+submitButton.addEventListener("click", sendRequest);
 
 // END card generator
 
