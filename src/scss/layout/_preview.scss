@@ -10,7 +10,7 @@
 	}
 
 	a {
-    color: $color-second;
+		color: $color-second;
 	}
 
 	&__container {
@@ -33,61 +33,52 @@
 		text-transform: uppercase;
 	}
 	&__card {
+		height: 330px;
 		margin-top: 38px;
+		background: $color-base;
 
 		&--text {
-			padding-top: 21px;
-			background: $color-base;
-			display: flex;
-			justify-content: flex-start;
-			align-items: flex-start;
-			flex-wrap: wrap;
+			padding: 23px 0 10px 0;
 		}
 		&--stick {
-			width: 5px;
-			height: 42px;
-			background: $color-cuaternary;
-			margin-top: 5px;
+			height: 44px;
+			font-family: $font-preview;
+			line-height: 20px;
+			padding-left: 15px;
+			border-left: 5px solid $color-cuaternary;
+			display: flex;
+			flex-direction: column;
 		}
 		&--name {
-			margin: 0px 0 4px 17px;
 			color: $color-second;
-			font-family: $font-preview;
 			text-transform: capitalize;
 			font-size: 18px;
-			line-height: 1.11;
 			font-weight: 800;
 		}
 		&--job {
-			margin-top: -20px;
-			margin-left: 22px;
 			color: $color-text;
-			padding-bottom: 10px;
-			font-family: $font-preview;
+			padding-top: 4px;
 			font-size: 16px;
-			line-height: 1.25;
 		}
 	}
 	&__img-container {
 		height: 200px;
+		background-image: url(../assets/images/NAN-card-photo-default.jpg);
 	}
-	&__menu {
-		background: $color-base;
-		&--contact {
-			height: 54px;
-			list-style: none;
-			display: flex;
-			justify-content: space-evenly;
-			text-align: center;
-			margin-right: 32px;
-			padding-top: 10px;
-		}
+	&__contact {
+		list-style: none;
+		display: flex;
+		justify-content: space-around;
+		padding: 10px 60px 12px 20px;
+
 		&--link {
 			width: 32px;
 			height: 32px;
 			border: 2px solid $color-third;
 			border-radius: 50px;
-			padding-top: 5px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 	}
 }

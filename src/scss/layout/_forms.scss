@@ -135,15 +135,16 @@
 
 /**** Estilos aplicados en sección HIDDEN ****/
 
-/* .inactive {
+.inactive {
   background-color: #d5d5d5;
-} */
+}
 
 .share-url {
   height: 136px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: space-around;
   border-bottom: #d8d8d8 solid 1px;
 
