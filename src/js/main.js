@@ -52,6 +52,7 @@ header3.addEventListener('click', collapse3);
 // Text input
 const inputList = document.querySelectorAll('.js-field');
 
+// Objeto DATA:
 let data = {
 	name: 'Nombre Apellido',
 	job: 'Front-end developer',
@@ -63,26 +64,32 @@ let data = {
 	palette: 1,
 };
 
+// Constantes con valores de DATA de inicio:
 const previewText = document.querySelectorAll('.js-preview-text');
 console.log(previewText);
 const nameInit = previewText[0].innerHTML;
 console.log('Esto es nameInit ' + nameInit);
 const jobInit = previewText[1].innerHTML;
 console.log('Esto es jobInit ' + jobInit);
-
-
 const previewHref = document.querySelectorAll('.js-preview-href');
 console.log(previewHref);
 const hrefInit = '#';
 
-// OPTIMIZAR SEGÚN VIDEO MIGUEL 20 oct
+// Función de carga de datos al iniciar el navegador:
 chargeData();
+
+// Función para recoger valores introducidos en los inputs:
 function getInfo(event) {
 	data[event.currentTarget.id] = event.currentTarget.value;
 	paint();
 	storeData();
 }
 
+for (const eachElement of inputList) {
+	eachElement.addEventListener('keyup', getInfo);
+}
+
+// Función para pintar en la tarjeta de PREVIEW:
 function paint() {
 	previewText[0].innerHTML = data.name || nameInit;
 	previewText[1].innerHTML = data.job || jobInit;
@@ -132,11 +139,8 @@ function paint() {
 // 	storeData();
 // }
 
-for (const eachElement of inputList) {
-	eachElement.addEventListener('keyup', getInfo);
-}
-
 // END Text input
+
 
 // Reset
 const btnReset = document.querySelector('.js-reset');
@@ -193,7 +197,7 @@ const responseURL = document.querySelector('.js-response');
 // constante selectora del formulario completo
 const form = document.querySelector('.js-form');
 
-// ¿?
+// 
 function sendData() {
 	sendRequest(data);
 }
