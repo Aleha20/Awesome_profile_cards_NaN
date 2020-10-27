@@ -1,7 +1,7 @@
 /* eslint-disable indent */
 'use strict';
 
-// Colapsables
+//****  COLAPSABLES  ****
 // constantes de header (cada uno funciona por separado), arrow (no usado aun) y content (cada uno funciona por separado)
 const header1 = document.querySelector('.js-header1');
 const header2 = document.querySelector('.js-header2');
@@ -42,14 +42,14 @@ function collapse3() {
 	}
 }
 header3.addEventListener('click', collapse3);
+//****  END COLAPSABLES  ****
 
-// END Colapsable
 
-// Selector de color
+//****  SELECTOR DE COLOR  ****
+//****  END SELECTOR DE COLOR  ****
 
-// END Selector de color
 
-// Text input
+//**** TEXT INPUT  ****
 const inputList = document.querySelectorAll('.js-field');
 
 // Objeto DATA:
@@ -138,11 +138,10 @@ function paint() {
 // 	}
 // 	storeData();
 // }
+//****  END TEXT INPUT  ****
 
-// END Text input
 
-
-// Reset
+//****  RESET  ****
 const btnReset = document.querySelector('.js-reset');
 
 function handleReset() {
@@ -163,21 +162,21 @@ function handleReset() {
 }
 
 btnReset.addEventListener('click', handleReset);
+//****  END RESET  ****
 
-// END Reset
 
-// Local Storage
+//****  LOCAL STORAGE  ****
 function storeData() {
-	console.log('guarda');
+	// console.log('guarda');
 	const jsonData = JSON.stringify(data);
 	localStorage.setItem('filledData', jsonData);
-	console.log(jsonData);
+	// console.log(jsonData);
 }
 
 function chargeData() {
-	console.log('carga');
+	// console.log('carga');
 	const storedData = localStorage.getItem('filledData');
-	console.log(storedData);
+	// console.log(storedData);
 	const lastData = JSON.parse(storedData);
 	if (lastData !== null) {
 		data = lastData;
@@ -185,26 +184,22 @@ function chargeData() {
 	console.log(lastData);
 	paint();
 }
+//****  END LOCAL STORAGE  ****
 
-// END Local Storage
 
-// card generator
-
+//****  CARD GENERATOR  ****
 // constante selectora del boton CREAR TARJETA
 const submitButton = document.querySelector('.js-submit');
 // constante selectora del ELEMENTO html con la URL
 const responseURL = document.querySelector('.js-response');
-// constante selectora del formulario completo
-const form = document.querySelector('.js-form');
 
-// 
-function sendData() {
-	sendRequest(data);
-}
+// function sendData() {
+// 	sendRequest(data);
+// }
 
 // Función para envío de datos a la API
 function sendRequest() {
-	console.log('entro en funcion antes de fetch');
+	// console.log('entro en funcion antes de fetch');
 	fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
 		method: 'POST',
 		body: JSON.stringify(data),
@@ -238,9 +233,8 @@ function showURL(result) {
 	}
 }
 submitButton.addEventListener('click', sendRequest);
+//****  END CARD GENERATOR  ****
 
-// END card generator
 
-// twitter
-
-// END twitter
+//****  TWITTER  ****
+//****  END TWITTER  ****

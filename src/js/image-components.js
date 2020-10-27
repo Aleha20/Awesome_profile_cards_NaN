@@ -15,7 +15,7 @@ const profilePreview = document.querySelector('.js__profile-preview');
  * @param {evento} e
  */
 function getImage(e) {
-  const myFile = e.currentTarget.files[0];
+	const myFile = e.currentTarget.files[0];
 	fr.addEventListener('load', writeImage);
 	fr.readAsDataURL(myFile);
 }
@@ -25,14 +25,14 @@ function getImage(e) {
  * trabajar con ellos ;)
  */
 function writeImage() {
-  /* En la propiedad `result` de nuestro FR se almacena
-   * el resultado. Ese resultado de procesar el fichero que hemos cargado
-   * podemos pasarlo como background a la imagen de perfil y a la vista previa
-   * de nuestro componente.
-   */
-  data.photo = fr.result;
-  profileImage.style.backgroundImage = `url(${fr.result})`;
-  profilePreview.style.backgroundImage = `url(${fr.result})`;
+	/* En la propiedad `result` de nuestro FR se almacena
+	 * el resultado. Ese resultado de procesar el fichero que hemos cargado
+	 * podemos pasarlo como background a la imagen de perfil y a la vista previa
+	 * de nuestro componente.
+	 */
+	data.photo = fr.result;
+	profileImage.style.backgroundImage = `url(${fr.result})`;
+	profilePreview.style.backgroundImage = `url(${fr.result})`;
 }
 
 /**
@@ -40,7 +40,7 @@ function writeImage() {
  * que está oculto
  */
 function fakeFileClick() {
-  fileField.click();
+	fileField.click();
 }
 
 /**
