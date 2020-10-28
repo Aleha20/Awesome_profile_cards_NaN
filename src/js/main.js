@@ -165,48 +165,9 @@ function paint() {
   previewHref[1].href = 'mailto:' + data.email || hrefInit;
   previewHref[2].href = 'https://' + data.linkedin || hrefInit;
   previewHref[3].href = 'https://github.com/' + data.github || hrefInit;
-
   profileImage.style.backgroundImage =
     `url(${data.photo})` || 'url(../images/NAN-card-photo-default.jpg)';
 }
-
-// 	if (event.currentTarget.id === 'name') {
-// 		if (event.currentTarget.value !== '') {
-// 			previewText[0].innerHTML = data.name;
-// 		} else {
-// 			previewText[0].innerHTML = nameInit;
-// 		}
-// 	} else if (event.currentTarget.id === 'job') {
-// 		if (event.currentTarget.value !== '') {
-// 			previewText[1].innerHTML = data.job;
-// 		} else {
-// 			previewText[1].innerHTML = jobInit;
-// 		}
-// 	} else if (event.currentTarget.id === 'phone') {
-// 		if (event.currentTarget.value !== '') {
-// 			previewHref[0].href = 'tel:' + data.phone;
-// 		} else {
-// 			previewHref[0].href = hrefInit;
-// 		}
-// 	} else if (event.currentTarget.id === 'email') {
-// 		if (event.currentTarget.value !== '') {
-// 			previewHref[1].href = 'mailto:' + data.email;
-// 		} else {
-// 			previewHref[1].href = hrefInit;
-// 		}
-// 	} else if (event.currentTarget.id === 'linkedin') {
-// 		if (event.currentTarget.value !== '') {
-// 			previewHref[2].href = 'https://' + data.linkedin;
-// 		} else {
-// 			previewHref[2].href = hrefInit;
-// 		}
-// 	} else if (event.currentTarget.id === 'github') {
-// 		previewHref[3].href = 'https://github.com/' + data.github.replace('@', '');
-// 	} else {
-// 		previewHref[3].href = hrefInit;
-// 	}
-// 	storeData();
-// }
 
 // END Text input
 
@@ -214,22 +175,26 @@ function paint() {
 const btnReset = document.querySelector('.js-reset');
 
 function handleReset() {
-  console.log('reset');
-  data.name = nameInit;
-  data.job = jobInit;
-  data.phone = hrefInit;
-  data.email = hrefInit;
-  data.linkedin = hrefInit;
-  data.github = hrefInit;
-  data.photo = '../images/NAN-card-photo-default.jpg';
-  data.palette = 1;
-  console.log(data);
-  for (const input of inputList) {
-    input.value = '';
-  }
-  paintPalette();
-  paint();
-  storeData();
+	console.log('reset');
+	data.name = nameInit;
+	data.job = jobInit;
+	data.phone = hrefInit;
+	data.email = hrefInit;
+	data.linkedin = hrefInit;
+	data.github = hrefInit;
+	data.photo = '../images/NAN-card-photo-default.jpg';
+	data.palette = 1;
+	console.log(data);
+	for (const input of inputList) {
+		input.value = '';
+	}
+	// profileImage.style.backgroundImage =
+	// 	'url(https://i.picasion.com/pic90/c5111e71a51b403560ec5dc5e27fdae1.gif)';
+	// profilePreview.style.backgroundImage =
+	// 	'url(https://i.picasion.com/pic90/c5111e71a51b403560ec5dc5e27fdae1.gif)';
+	paintPalette();
+	paint();
+	storeData();
 }
 
 btnReset.addEventListener('click', handleReset);

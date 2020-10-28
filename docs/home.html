@@ -30,47 +30,68 @@
 		  </header>
 		<main class="main">
 		  <section class="preview">
-  			<div class="preview__container">
-  				<button class="preview__reset js-reset">
-  					<i class="far fa-trash-alt"></i>Reset
-  				</button>
-  				<div class="preview__card">
-  					<div class="preview__card--text">
-  						<div class="preview__card--stick">
-  							<h1 class="js-preview-text preview__card--name">Nombre apellido</h1>
-  							<h2 class="js-preview-text preview__card--job">
-  								Front-end developer
-  							</h2>
-  						</div>
-  					</div>
-  					<div
-  						class="preview__img-container profile__image js__profile-image"></div>
-  					<nav>
-  						<ul class="preview__contact">
-  							<li class="preview__contact--link">
-  								<a class="js-preview-href" href="#" target="_blank">
-  									<i class="fas fa-mobile-alt"></i>
-  								</a>
-  							</li>
-  							<li class="preview__contact--link">
-  								<a class="js-preview-href" href="#" target="_blank">
-  									<i class="far fa-envelope"></i>
-  								</a>
-  							</li>
-  							<li class="preview__contact--link">
-  								<a class="js-preview-href" href="#" target="_blank">
-  									<i class="fab fa-linkedin-in"></i>
-  								</a>
-  							</li>
-  							<li class="preview__contact--link">
-  								<a class="js-preview-href" href="#" target="_blank">
-  									<i class="fab fa-github-alt"></i>
-  								</a>
-  							</li>
-  						</ul>
-  					</nav>
-  				</div>
-  			</div>
+  		  <div class="preview__container">
+  		    <button class="preview__reset js-reset">
+  		      <i class="far fa-trash-alt"></i>Reset
+  		    </button>
+  		    <div class="preview__card">
+  		      <div class="preview__card--text">
+  		        <div class="preview__card--stick js-stick stick-border-cold">
+  		          <h1
+  		            class="js-preview-text js-preview-name preview__card--name name-cold"
+  		          >
+  		            Nombre apellido
+  		          </h1>
+  		          <h2 class="js-preview-text preview__card--job">
+  		            Front-end developer
+  		          </h2>
+  		        </div>
+  		      </div>
+  		      <div
+  		        class="preview__img-container profile__image js__profile-image"
+  		      ></div>
+  		      <nav>
+  		        <ul class="preview__contact">
+  		          <li>
+  		            <a
+  		              class="js-preview-href js-icon icon-cold preview__contact--link"
+  		              href="#"
+  		              target="_blank"
+  		            >
+  		              <i class="fas fa-mobile-alt"></i>
+  		            </a>
+  		          </li>
+  		          <li>
+  		            <a
+  		              class="js-preview-href js-icon icon-cold preview__contact--link"
+  		              href="#"
+  		              target="_blank"
+  		            >
+  		              <i class="far fa-envelope"></i>
+  		            </a>
+  		          </li>
+  		          <li>
+  		            <a
+  		              class="js-preview-href js-icon icon-cold preview__contact--link"
+  		              href="#"
+  		              target="_blank"
+  		            >
+  		              <i class="fab fa-linkedin-in"></i>
+  		            </a>
+  		          </li>
+  		          <li>
+  		            <a
+  		              class="js-preview-href js-icon icon-cold preview__contact--link"
+  		              href="#"
+  		              target="_blank"
+  		            >
+  		              <i class="fab fa-github-alt"></i>
+  		            </a>
+  		          </li>
+  		        </ul>
+  		      </nav>
+  		    </div>
+  		  </div>
   		</section>
 
 		  <section class="forms">
@@ -83,15 +104,17 @@
     		      </div>
     		      <i class="fas fa-angle-down js-arrow item__header--arrow"></i>
     		    </div>
-    		    <div class="js-content1 collapsed  item__content colours">
+    		    <div class="js-content1 collapsed item__content colours">
     		      <h3 class="colours__title">Colores</h3>
     		      <form class="colours__options">
     		        <label for="option1" class="option-flex option1">
     		          <input
     		            id="option1"
     		            type="radio"
-    		            value="option1"
+    		            value="1"
     		            name="colours"
+    		            class="js-option1"
+    		            checked
     		          />
     		          <div class="option1__colour1"></div>
     		          <div class="option1__colour2"></div>
@@ -101,8 +124,9 @@
     		          <input
     		            id="option2"
     		            type="radio"
-    		            value="option2"
+    		            value="2"
     		            name="colours"
+    		            class="js-option2"
     		          />
     		          <div class="option2__colour1"></div>
     		          <div class="option2__colour2"></div>
@@ -112,8 +136,9 @@
     		          <input
     		            id="option3"
     		            type="radio"
-    		            value="option3"
+    		            value="3"
     		            name="colours"
+    		            class="js-option3"
     		          />
     		          <div class="option3__colour1"></div>
     		          <div class="option3__colour2"></div>
@@ -249,15 +274,26 @@
 		</main>
 
 		<footer class="footer">
-		  <div class="footer__text">Awesome profile-cards &#64;2018</div>
-		  <div>
-		    <img
-		      class="footer__logo"
-		      src="./assets/images/logo-adalab.png"
-		      alt="Logo Adalab"
-		      title="Adalab"
-		    />
-		  </div>
+			<div class="footer__copyright">
+				<img
+					class="footer__copyright--icon"
+					src="./assets/images/icon-NaN-monster.png"
+					alt="Logo de NaN · Not a Name"
+					title="NaN · Not a Name"
+				/>
+				<div class="footer__copyright--text">
+					<p>NaN · Not a Name &#64;2020</p>
+					<p>Awesome profile-cards</p>
+				</div>
+			</div>
+			<div>
+				<img
+					class="footer__logo"
+					src="./assets/images/logo-adalab.png"
+					alt="Logo Adalab"
+					title="Adalab"
+				/>
+			</div>
 		</footer>
 
 
