@@ -1,16 +1,18 @@
 .preview {
 	width: 100vw;
-
+	height: 460px;
 	background-image: url(../images/bg-yellow-NaN-monster.jpg);
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
 	@media all and (min-width: 768px) {
-		width: calc(100% - 439px);
-/* 		height: calc(100vw - 200px); */
-		/*     padding: 173px 0 260px 0; */
+    width: calc(100% - 400px);
+    height: calc(100vh - 232px);
 		border-radius: 6px;
 		margin-left: 10px;
+  }
+  @media all and (min-width: 1024px) {
+    height: 100vh;
 	}
 
 	a {
@@ -19,28 +21,33 @@
 
 	&__container {
 		width: 240px;
-		margin: 0 auto;
-		padding: 38px 0 40px 0;
+		@media all and (min-width: 768px) {
+      margin: 0 45px;
+		}
 	}
 
 	&__reset {
 		width: 75px;
 		height: 30px;
+		background: none;
 		border-radius: 15px;
 		border: solid 1px $color-base;
 		outline: none;
-		background: none;
+		color: $color-text;
 		font-family: $font-main;
 		font-size: 12px;
 		line-height: 1.67;
-		color: $color-text;
-    text-transform: uppercase;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+		&:hover {
+			cursor: pointer;
+			background-color: $color-main;
+			color: $color-bg-main;
+		}
 	}
 	&__card {
 		height: 330px;
-		margin-top: 38px;
 		background: $color-base;
-
 		&--text {
 			padding: 23px 0 10px 0;
 		}

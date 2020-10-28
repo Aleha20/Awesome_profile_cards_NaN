@@ -100,5 +100,10 @@
 				bottom: 60px;
 			}
 		}
+		&:hover {
+			cursor: pointer;
+			background-color: #3999a8;
+			font-weight: bold;
+		}
 	}
 }

@@ -1,192 +1,225 @@
 /**** Estilos aplicados en HTML de FORMS ****/
 
 .forms {
-  background-image: linear-gradient(to bottom, $color-bg-main, $color-base 9%);
-  @media all and (min-width: 768px) {
-    background-image: none;
-    width: 399px;
-  }
-  &__list {
-    font-size: 18px;
-    font-family: $font-main;
-    color: $color-text;
-    padding: 17px 20px 30px 20px;
-
-    /**** Estilos compartidos en HTML de FORM-DESIGN + FORM-FILL + FORM-SHARE ****/
-
-    .item {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      border-bottom: #d8d8d8 solid 1px;
-
-      &__content {
-        margin-bottom: 30px;
-        margin-top: 20px;
-      }
-
-      .collapsed {
-        display: none;
-      }
-      /**** Estilos de las CABECERAS de los desplegables  ****/
-
-      &__header {
-        font-family: $font-main;
-        display: flex;
-        justify-content: space-between;
-        text-transform: uppercase;
-        padding: 10px 0 5px 0;
-
-        &--icon {
-          color: $color-main;
-          font-size: 18px;
-          margin-right: 10px;
-        }
-
-        &--title {
-          display: flex;
-          align-items: center;
-          h2 {
-            font-family: $font-main;
-            font-size: 18px;
-            color: $color-text;
-          }
-        }
-        &--arrow {
-          font-size: 18px;
-          color: $color-text;
-        }
-      }
-    }
-  }
+	background-image: linear-gradient(to bottom, $color-bg-main, $color-base 9%);
+	@media all and (min-width: 768px) {
+		background-image: none;
+		width: 399px;
+	}
+	&__list {
+		font-size: 18px;
+		font-family: $font-main;
+		color: $color-text;
+		padding: 17px 10px 30px 10px;
+	}
 }
 
+/**** Estilos compartidos en HTML de FORM-DESIGN + FORM-FILL + FORM-SHARE ****/
+
+.item {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	border-bottom: #d8d8d8 solid 1px;
+
+	/**** Estilos de las CABECERAS de los desplegables  ****/
+
+	&__header {
+		font-family: $font-main;
+		display: flex;
+		justify-content: space-between;
+		text-transform: uppercase;
+		padding: 10px 10px 5px 10px;
+		&:hover {
+			cursor: pointer;
+			background-color: $color-bg-main;
+			color: $color-main;
+		}
+
+		&--icon {
+			color: $color-main;
+			font-size: 18px;
+			margin-right: 10px;
+		}
+
+		&--title {
+			display: flex;
+			align-items: center;
+			h2 {
+				font-family: $font-main;
+				font-size: 18px;
+				color: $color-text;
+			}
+		}
+		&--arrowDown {
+			font-size: 18px;
+			color: $color-text;
+			&:hover {
+				cursor: pointer;
+				color: $color-main;
+				font-size: 20px;
+			}
+		}
+		&--arrowUp {
+			font-size: 18px;
+			color: $color-main;
+			transition: transform;
+			transform: rotate(180deg);
+			&:hover {
+				cursor: pointer;
+				color: $color-main;
+				font-size: 20px;
+			}
+		}
+	}
+
+	/**** Estilos del CONTENIDO de los desplegables  ****/
+
+	&__content {
+		margin-bottom: 30px;
+		margin-top: 20px;
+	}
+
+	.collapsed {
+		display: none;
+	}
+}
 /**** Estilos aplicados en sección DISEÑA ****/
 
 .colours {
-  display: flex;
-  margin-left: 19px;
-  text-transform: uppercase;
-  justify-content: space-evenly;
-  &__title {
-    color: $color-text;
-    width: 50%;
-    font-size: 14px;
-  }
-}
-
-.colours__options {
-  width: 50%;
+	display: flex;
+	margin-left: 19px;
+	text-transform: uppercase;
+	justify-content: space-evenly;
+	&__title {
+		color: $color-text;
+		width: 50%;
+		font-size: 14px;
+	}
+	&__palettes {
+		width: 50%;
+	}
 }
 
 /**** Estilos aplicados en sección RELLENA ****/
 
 .fill {
-  display: flex;
-  flex-direction: column;
-  font-family: $font-main;
-  font-size: 14px;
-  color: $color-second;
-  line-height: 20px;
-  &__box {
-    border: 1px solid $color-third;
-    height: 30px;
-    margin: 7px 0 20px 0;
-    &:last-child {
-      margin-bottom: 0;
-    }
-    &::placeholder {
-      color: #c5c5c5;
-      padding-left: 9px;
-    }
-  }
+	display: flex;
+	flex-direction: column;
+	font-family: $font-main;
+	font-size: 14px;
+	color: $color-second;
+	line-height: 20px;
+	&__box {
+		border: 1px solid $color-third;
+		height: 30px;
+		margin: 7px 0 20px 0;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&::placeholder {
+			color: #c5c5c5;
+			padding-left: 9px;
+		}
+	}
 }
 
 /**** Estilos aplicados en sección COMPARTE ****/
 
 .share {
-  width: 199px;
-  height: 50px;
-  background-color: $color-main;
-  border-radius: 12px;
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  &__icon {
-    color: $color-base;
-    font-size: 22px;
-    margin-right: 9px;
-  }
-  &__text {
-    font-family: $font-main;
-    color: $color-base;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    text-transform: uppercase;
-    padding: 10px 5px;
-  }
+	width: 199px;
+	height: 50px;
+	background-color: $color-main;
+	border-radius: 12px;
+	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	&:hover {
+    cursor: pointer;
+    background-color: #FFA411;
+    
+	}
+	&__icon {
+		color: $color-base;
+		font-size: 22px;
+		margin-right: 9px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	&__text {
+		font-family: $font-main;
+		color: $color-base;
+		font-size: 18px;
+		font-weight: 600;
+		background-color: transparent;
+		border: none;
+		outline: none;
+		text-transform: uppercase;
+		padding: 10px 5px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
 }
 
 /**** Estilos aplicados en sección HIDDEN ****/
 
 .inactive {
-  background-color: #d5d5d5;
+	background-color: #d5d5d5;
 }
 
 .share-url {
-  height: 136px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: space-around;
-  border-bottom: #d8d8d8 solid 1px;
+	height: 136px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: space-around;
+	border-bottom: #d8d8d8 solid 1px;
 
-  &__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-  }
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
 
-  &__title {
-    font-family: $font-main;
-    font-size: 18px;
-    color: $color-text;
-    font-weight: 600;
-  }
+	&__title {
+		font-family: $font-main;
+		font-size: 18px;
+		color: $color-text;
+		font-weight: 600;
+	}
 
-  &__link {
-    color: $color-main;
-    text-decoration: none;
-    font-family: $font-main;
-    font-size: 12px;
-    font-weight: 600;
-    padding: 5px 0 10px 0;
-    &--share {
-      width: 181px;
-      padding: 6px 0;
-      display: flex;
-      justify-content: center;
-      background-color: #00a0f5;
-      font-size: 14px;
-      color: $color-base;
-      text-decoration: none;
-      border-radius: 3px;
-      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
-    }
-    &--twitter {
-      font-size: 18px;
-      margin-right: 9.5px;
-    }
-  }
+	&__link {
+		color: $color-main;
+		text-decoration: none;
+		font-family: $font-main;
+		font-size: 12px;
+		font-weight: 600;
+		padding: 5px 0 10px 0;
+		&--share {
+			width: 181px;
+			padding: 6px 0;
+			display: flex;
+			justify-content: center;
+			background-color: #00a0f5;
+			font-size: 14px;
+			color: $color-base;
+			text-decoration: none;
+			border-radius: 3px;
+			box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+		}
+		&--twitter {
+			font-size: 18px;
+			margin-right: 9.5px;
+		}
+	}
 }
 .hidden {
-  display: none;
+	display: none;
 }

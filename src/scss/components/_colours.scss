@@ -1,64 +1,60 @@
-.option-flex {
+.palette-flex {
 	display: flex;
 	justify-content: center;
   align-items: center;
 }
 
-.option1 {
+.colour-box {
+		width: 30px;
+		height: 25px;	
+}
+
+.palette1 {
+	&:hover {
+		cursor: pointer;
+	}
 	&__colour1 {
 		margin-left: 10px;
-		width: 30px;
-		height: 25px;
 		background: $color-cold-one;
 	}
 	&__colour2 {
-		width: 30px;
-		height: 25px;
 		background: $color-cold-two;
 	}
 	&__colour3 {
-		width: 30px;
-		height: 25px;
 		background: $color-cold-three;
 	}
 }
 
-.option2 {
+.palette2 {
   margin-top: 10px;
-  margin-bottom: 10px;
+	margin-bottom: 10px;
+	&:hover {
+		cursor: pointer;
+	}
 	&__colour1 {
 		margin-left: 10px;
-		width: 30px;
-		height: 25px;
 		background: $color-warm-one;
 	}
 	&__colour2 {
-		width: 30px;
-		height: 25px;
 		background: $color-warm-two;
 	}
 	&__colour3 {
-		width: 30px;
-		height: 25px;
 		background: $color-warm-three;
 	}
 }
 
-.option3 {
+.palette3 {
+	&:hover {
+		cursor: pointer;
+	}
 	&__colour1 {
 		margin-left: 10px;
-		width: 30px;
-		height: 25px;
 		background: $color-mild-one;
 	}
 	&__colour2 {
-		width: 30px;
-		height: 25px;
 		background: $color-mild-two;
 	}
 	&__colour3 {
-		width: 30px;
-		height: 25px;
 		background: $color-mild-three;
 	}
 }
