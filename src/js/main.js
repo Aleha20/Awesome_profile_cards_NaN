@@ -280,5 +280,3 @@ function showURL(result) {
 submitButton.addEventListener('click', sendRequest);
 // ** END CARD GENERATOR **
 
-// ** TWITTER **
-// ** END TWITTER **

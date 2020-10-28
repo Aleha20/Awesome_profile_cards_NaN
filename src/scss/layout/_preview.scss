@@ -1,18 +1,22 @@
 .preview {
 	width: 100vw;
 	height: 460px;
-	background-image: url(../images/bg-yellow-NaN-monster.jpg);
+	background-image: url(../images/bg-NaN-monster.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	@media all and (min-width: 768px) {
-    width: calc(100% - 400px);
-    height: calc(100vh - 232px);
+		width: calc(100% - 400px);
+		height: calc(100vh - 232px);
 		border-radius: 6px;
 		margin-left: 10px;
-  }
-  @media all and (min-width: 1024px) {
-    height: 100vh;
+	}
+	@media all and (min-width: 1024px) {
+		height: 100vh;
+		background-image: url(../images/bg-eyes-NaN-monster.jpg);
 	}
 
 	a {
@@ -22,18 +26,18 @@
 	&__container {
 		width: 240px;
 		@media all and (min-width: 768px) {
-      margin: 0 45px;
+			margin: 0 45px;
 		}
 	}
 
 	&__reset {
 		width: 75px;
 		height: 30px;
-		background: none;
+		background: $color-main;
 		border-radius: 15px;
 		border: solid 1px $color-base;
 		outline: none;
-		color: $color-text;
+		color: $color-bg-main;
 		font-family: $font-main;
 		font-size: 12px;
 		line-height: 1.67;
@@ -41,7 +45,9 @@
 		margin-bottom: 20px;
 		&:hover {
 			cursor: pointer;
-			background-color: $color-main;
+			font-weight: bolder;
+			font-size: 13px;
+			background-color: #f3432f;
 			color: $color-bg-main;
 		}
 	}
