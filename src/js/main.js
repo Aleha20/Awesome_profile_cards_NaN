@@ -11,7 +11,7 @@ let data = {
   email: '#',
   linkedin: '#',
   github: '#',
-  photo: 'url(../images/NAN-card-photo-default.jpg)',
+  photo: 'url(../images/preview-default-NaN-team-monsters.jpg)',
   palette: 1,
 };
 
@@ -134,13 +134,9 @@ const inputList = document.querySelectorAll('.js-field');
 
 // Constantes con valores de DATA de inicio:
 const previewText = document.querySelectorAll('.js-preview-text');
-console.log(previewText);
 const nameInit = previewText[0].innerHTML;
-console.log('Esto es nameInit ' + nameInit);
 const jobInit = previewText[1].innerHTML;
-console.log('Esto es jobInit ' + jobInit);
 const previewHref = document.querySelectorAll('.js-preview-href');
-console.log(previewHref);
 const hrefInit = '#';
 
 // Función de carga de datos al iniciar el navegador:
@@ -166,7 +162,7 @@ function paint() {
   previewHref[2].href = 'https://' + data.linkedin || hrefInit;
   previewHref[3].href = 'https://github.com/' + data.github || hrefInit;
   profileImage.style.backgroundImage =
-    `url(${data.photo})` || 'url(../images/NAN-card-photo-default.jpg)';
+    `url(${data.photo})` || 'url(../images/preview-default-NaN-team-monsters.jpg)';
 }
 
 // END Text input
@@ -175,23 +171,21 @@ function paint() {
 const btnReset = document.querySelector('.js-reset');
 
 function handleReset() {
-	console.log('reset');
 	data.name = nameInit;
 	data.job = jobInit;
 	data.phone = hrefInit;
 	data.email = hrefInit;
 	data.linkedin = hrefInit;
 	data.github = hrefInit;
-	data.photo = '../images/NAN-card-photo-default.jpg';
+	data.photo = '../assets/images/preview-default-NaN-team-monsters.jpg';
 	data.palette = 1;
-	console.log(data);
 	for (const input of inputList) {
 		input.value = '';
 	}
-	// profileImage.style.backgroundImage =
-	// 	'url(https://i.picasion.com/pic90/c5111e71a51b403560ec5dc5e27fdae1.gif)';
-	// profilePreview.style.backgroundImage =
-	// 	'url(https://i.picasion.com/pic90/c5111e71a51b403560ec5dc5e27fdae1.gif)';
+	profileImage.style.backgroundImage =
+		'url(../assets/images/bg-yellow-NaN-monster.jpg)';
+	profilePreview.style.backgroundImage =
+  'url(../assets/images/preview-default-NaN-team-monsters.jpg)';
 	paintPalette();
 	paint();
 	storeData();
@@ -203,21 +197,16 @@ btnReset.addEventListener('click', handleReset);
 
 // Local Storage
 function storeData() {
-  console.log('guarda');
   const jsonData = JSON.stringify(data);
   localStorage.setItem('filledData', jsonData);
-  console.log(jsonData);
 }
 
 function chargeData() {
-  console.log('carga');
   const storedData = localStorage.getItem('filledData');
-  console.log(storedData);
   const lastData = JSON.parse(storedData);
   if (lastData !== null) {
     data = lastData;
   }
-  console.log(lastData);
   paintPalette();
   paint();
 }
@@ -240,7 +229,6 @@ function sendData() {
 
 // Función para envío de datos a la API
 function sendRequest() {
-  console.log('entro en funcion antes de fetch');
   fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
     method: 'POST',
     body: JSON.stringify(data),
